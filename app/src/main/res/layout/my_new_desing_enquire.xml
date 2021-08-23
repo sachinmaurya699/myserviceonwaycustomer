@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F39306"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <!-- ..............name.............-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/dummy_name"
+            android:layout_marginStart="10dp"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dynmic_name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dummy_name"
+            android:layout_margin="5dp"
+            android:hint="Enter the name"
+            />
+
+
+            <!-- ..............email.............-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dynmic_name"
+                android:id="@+id/dummy_email"
+                android:layout_marginStart="10dp"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dynmic_email"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dummy_email"
+                android:layout_margin="5dp"
+                android:hint="Enter the Email"
+                />
+
+            <!-- ..............number.............-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dynmic_email"
+                android:id="@+id/dummy_number"
+                android:layout_marginStart="10dp"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dynmic_number"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dummy_number"
+                android:layout_margin="5dp"
+                android:hint="Enter the Number"
+                />
+
+            <!-- ..............service type.............-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Type"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#000"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dynmic_number"
+                android:id="@+id/dummy_service_type"
+                android:layout_marginStart="10dp"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dynmic_service"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dummy_service_type"
+                android:layout_margin="5dp"
+                android:hint="Enter the service type"
+                />
+
+           <!--.............description................-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dynmic_service"
+                android:id="@+id/dummy_description"
+                android:layout_marginStart="10dp"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dynemic_desc"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dummy_description"
+                android:layout_margin="5dp"
+                android:hint="Enter the description"
+                />
+
+
+           <!-- ............button..................-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="7"
+                android:id="@+id/submit_enquire"
+                android:background="@drawable/b1"
+                android:text="Submit"
+                android:textSize="14dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dynemic_desc"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

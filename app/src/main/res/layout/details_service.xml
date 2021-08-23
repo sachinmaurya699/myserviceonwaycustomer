@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+            android:text="name"
+            android:id="@+id/name"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+
+            />-->
+
+        <!--...........name.......-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:drawableLeft="@drawable/ic_person_n"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+            android:text="name"
+            android:id="@+id/name_dynmic"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+
+            />
+
+
+
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:text="email"
+            android:id="@+id/email"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+
+            />-->
+        <!--...........email.......-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:drawableLeft="@drawable/ic_email"
+            app:layout_constraintLeft_toLeftOf="@+id/name_dynmic"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_dynmic"
+            android:text="email"
+            android:id="@+id/email_dynmic"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            />
+
+
+
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            android:text="Service Type"
+            android:id="@+id/service_type"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+
+            />-->
+        <!--...........Service type.......-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_service1"
+            app:layout_constraintLeft_toLeftOf="@+id/email_dynmic"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_dynmic"
+            android:text="Service Type"
+            android:id="@+id/service_dynmc"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+
+            />
+
+
+
+
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dec_dummy"
+            app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/service_type"
+            android:text="description"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+
+            />
+-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:drawableLeft="@drawable/ic_des"
+            android:ems="19"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_dynmc"
+            android:text="description"
+            android:id="@+id/desc_dynmic"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

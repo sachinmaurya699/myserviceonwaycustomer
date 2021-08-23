@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F39B19</color>
+    <color name="colorPrimaryDark">#ED8F04</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="notification">#F41504</color>
+
+    <color name="color1">#D5959391</color>
+    <color name="colour">#ED930E</color>
+
+
+    <!-- <color name="disableforeground_gray">#D8D1D1</color>
+     <color name="disable_thumb_gray">#D8D1D1</color>
+     <color name="enable_thumb_Red">#EE1010</color>-->
+</resources>

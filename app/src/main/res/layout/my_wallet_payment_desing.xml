@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardElevation="5dp"
+    android:layout_marginTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    >
+
+
+    <include
+
+        layout="@layout/my_toolbar_2"
+        android:id="@+id/my_toolbar_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </include>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_image_dia"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar_1"
+        android:src="@drawable/wallet"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WALLET AMOUNT"
+        android:textColor="#000"
+        android:id="@+id/dummy_wallet"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_image_dia"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WALLET AMOUNT"
+        android:textColor="#000"
+        android:id="@+id/wallet_text_dia"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dummy_wallet"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_wallet"
+        android:buttonTint="@color/colorPrimary"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wallet_text_dia"
+        app:layout_constraintTop_toBottomOf="@+id/dummy_wallet" />
+
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:layout_marginTop="5dp"
+        android:background="#DCD6D6"
+        android:id="@+id/subscription_money"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_text_dia"
+        />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DCD6D6"
+        android:ems="14"
+        android:text="Subscription Amount: 100"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:id="@+id/subscription_statement_id"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_text_dia"
+        />
+
+    <TextView
+        android:id="@+id/edit_text_contact_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="USER CONTACT"
+        android:ems="13"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#DCD6D6"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscription_statement_id" />
+
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ENTER THE  RC NO"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:ems="14"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#DCD6D6"
+        android:id="@+id/rc_no_ID"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_contact_dia"
+
+        />
+
+
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ENTER THE MODEL NAME  "
+        android:gravity="center"
+        android:ems="14"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#DCD6D6"
+        android:id="@+id/MODEL_NAME"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rc_no_ID"
+
+        />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ENTER THE PLATE NO  "
+        android:gravity="center"
+        android:ems="14"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#DCD6D6"
+        android:id="@+id/name_plate_number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MODEL_NAME"
+
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pay_amount"
+        android:ems="15"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Pay Now"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#F4ECEC"
+        android:background="@drawable/b1"
+        app:layout_constraintTop_toBottomOf="@+id/name_plate_number"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

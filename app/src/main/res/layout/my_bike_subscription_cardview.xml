@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="220dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:focusable="true"
+    android:id="@+id/cardView_1"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+     >
+
+        <TextView
+            android:id="@+id/fix_text_time"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:text="Time period"
+            android:textColor="#1B1A1A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 year"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#D5959391"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_cal22"
+            android:id="@+id/dynamic_time"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#1B1A1A"
+            android:textStyle="bold"
+            android:id="@+id/fix_text_price"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fix_text_time"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#D5959391"
+            android:drawableLeft="@drawable/rss"
+            android:id="@+id/dynamic_text_price"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fix_text_time"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="#1B1A1A"
+            android:id="@+id/fix_service"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fix_text_price"
+
+            />
+
+      <!--  <include
+            layout="@layout/mydesign_subscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_id"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dynamic_text_price"
+            >
+
+
+
+
+        </include>-->
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:id="@+id/my_card_v1"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/dynamic_text_price"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_id"
+
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dynamic_text_price"
+          >
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENERAL SERVICE"
+            android:id="@+id/dynamic_general_service"
+            android:textSize="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/fix_service"
+            app:layout_constraintTop_toBottomOf="@+id/fix_text_price"
+
+            />
+-->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Book now"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:id="@+id/button_id"
+            android:background="@drawable/b1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_card_v1"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

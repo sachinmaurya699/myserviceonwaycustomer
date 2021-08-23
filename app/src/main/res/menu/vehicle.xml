@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group"
+        app:itemIconTint="@android:color/holo_red_dark"
+        android:checkableBehavior="single"
+
+        >
+
+
+   <item
+       android:id="@+id/my_price"
+       android:title="price"
+       android:checked="false"
+      />
+    <item
+        android:id="@+id/name"
+        android:title="name"
+        android:checked="false"
+        />
+
+    </group>
+
+
+
+</menu>
